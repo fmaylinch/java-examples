@@ -1,6 +1,6 @@
-package tech.bts.javaexamples.classes;
+package tech.bts.javaexamples.classes.model;
 
-public class MainClient {
+public class Main {
 
     public static void main(String[] args) {
 

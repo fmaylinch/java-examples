@@ -1,6 +1,6 @@
 package tech.bts.javaexamples.simpleprogram;
 
-import tech.bts.javaexamples.classes.MathUtil;
+import tech.bts.javaexamples.classes.util.MathUtil;
 
 import java.util.*;
 

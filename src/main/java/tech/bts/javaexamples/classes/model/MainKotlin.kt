@@ -1,4 +1,4 @@
-package tech.bts.javaexamples.classes
+package tech.bts.javaexamples.classes.model
 
 fun main(args: Array<String>) {
 

@@ -1,4 +1,4 @@
-package tech.bts.javaexamples.classes
+package tech.bts.javaexamples.classes.machine.calculator
 
 // The constructor is right next to the class
 class CalculatorKotlin (var value: Double) {

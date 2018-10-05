@@ -1,6 +1,6 @@
 package tech.bts.javaexamples.simpleprogram
 
-import tech.bts.javaexamples.classes.MathUtilKotlin
+import tech.bts.javaexamples.classes.util.MathUtilKotlin
 
 fun main(args: Array<String>) {
 
