@@ -6,7 +6,6 @@ public class StatsMain {
 
         Stats stats = new Stats();
 
-        /*
         stats.add(7.0);
         stats.add(8.0);
         stats.add(4.0);
@@ -17,6 +16,5 @@ public class StatsMain {
         System.out.println( stats.getAverage() );
         System.out.println( stats.getMax() );
         System.out.println( stats.getMin() );
-        */
     }
 }
