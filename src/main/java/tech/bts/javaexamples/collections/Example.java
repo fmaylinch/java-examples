@@ -9,6 +9,7 @@ public class Example {
 
         arrays();
         lists();
+        myList();
     }
 
     private static void arrays() {
@@ -55,6 +56,18 @@ public class Example {
         for (int i = 0; i < names.size(); i++) {
             System.out.println("The name at index " + i + " is " + names.get(i));
         }
+    }
+
+    private static void myList() {
+
+        MyLinkedList list = new MyLinkedList();
+
+        list.add(2.5);
+        list.add(10.0);
+        list.add(3.7);
+        list.add(4.0);
+
+        System.out.println("The size is: " + list.size());
     }
 }
 
