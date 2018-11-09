@@ -9,7 +9,8 @@ public class Example {
 
         //arrays();
         //lists();
-        myList();
+        //myList();
+        myListWithStrings();
     }
 
     private static void arrays() {
@@ -60,7 +61,7 @@ public class Example {
 
     private static void myList() {
 
-        MyLinkedList list = new MyLinkedList();
+        MyList<Double> list = new MyLinkedList<>();
 
         list.add(2.5);
         list.add(10.0);
@@ -74,6 +75,19 @@ public class Example {
 
         for (int i = 0; i < list.size(); i++) {
             System.out.println("The number at index " + i + " is " + list.get(i));
+        }
+    }
+
+    private static void myListWithStrings() {
+
+        MyList<String> list = new MyLinkedList<>();
+
+        list.add("Peter");
+        list.add("Mary");
+        list.add("Alex");
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(i + " -> " + list.get(i));
         }
     }
 }

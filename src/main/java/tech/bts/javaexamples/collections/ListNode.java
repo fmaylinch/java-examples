@@ -1,33 +1,31 @@
 package tech.bts.javaexamples.collections;
 
-// TODO: fix this class so we can use other types, not only Double
-
 /**
  * This will store one value of a list
  */
-public class ListNode {
+public class ListNode<T> {
 
-    private Double value;
-    private ListNode next;
+    private T value;
+    private ListNode<T> next;
 
-    public ListNode(Double value, ListNode next) {
+    public ListNode(T value, ListNode<T> next) {
         this.value = value;
         this.next = next;
     }
 
-    public Double getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(Double value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
-    public ListNode getNext() {
+    public ListNode<T> getNext() {
         return next;
     }
 
-    public void setNext(ListNode next) {
+    public void setNext(ListNode<T> next) {
         this.next = next;
     }
 }

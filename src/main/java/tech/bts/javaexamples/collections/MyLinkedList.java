@@ -1,9 +1,12 @@
 package tech.bts.javaexamples.collections;
 
-public class MyLinkedList implements MyList {
+/**
+ * Simple generic linked list, similar to the original LinkedList.
+ */
+public class MyLinkedList<T> implements MyList<T> {
 
-    private ListNode firstNode;
-    private ListNode lastNode;
+    private ListNode<T> firstNode;
+    private ListNode<T> lastNode;
     private int count;
 
     public MyLinkedList() {
@@ -13,9 +16,9 @@ public class MyLinkedList implements MyList {
     }
 
     @Override
-    public void add(Double x) {
+    public void add(T x) {
 
-        ListNode newNode = new ListNode(x, null);
+        ListNode<T> newNode = new ListNode<T>(x, null);
 
         if (isEmpty()) {
 
@@ -40,9 +43,9 @@ public class MyLinkedList implements MyList {
     }
 
     @Override
-    public Double get(int index) {
+    public T get(int index) {
 
-        ListNode currentNode = this.firstNode;
+        ListNode<T> currentNode = this.firstNode;
 
         for (int i = 1; i <= index; i++) {
             currentNode = currentNode.getNext();
