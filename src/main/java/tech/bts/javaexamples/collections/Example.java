@@ -7,8 +7,8 @@ public class Example {
 
     public static void main(String[] args) {
 
-        arrays();
-        lists();
+        //arrays();
+        //lists();
         myList();
     }
 
@@ -68,6 +68,13 @@ public class Example {
         list.add(4.0);
 
         System.out.println("The size is: " + list.size());
+        System.out.println("The first value is: " + list.get(0));
+        System.out.println("The second value is: " + list.get(1));
+        System.out.println("The third value is: " + list.get(2));
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("The number at index " + i + " is " + list.get(i));
+        }
     }
 }
 

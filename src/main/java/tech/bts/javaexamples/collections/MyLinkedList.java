@@ -4,10 +4,12 @@ public class MyLinkedList implements MyList {
 
     private ListNode firstNode;
     private ListNode lastNode;
+    private int count;
 
     public MyLinkedList() {
         this.firstNode = null;
         this.lastNode = null;
+        this.count = 0;
     }
 
     @Override
@@ -29,6 +31,8 @@ public class MyLinkedList implements MyList {
             // And make the newNode the current lastNode
             this.lastNode = newNode;
         }
+
+        this.count++;
     }
 
     public boolean isEmpty() {
@@ -37,11 +41,18 @@ public class MyLinkedList implements MyList {
 
     @Override
     public Double get(int index) {
-        return null;
+
+        ListNode currentNode = this.firstNode;
+
+        for (int i = 1; i <= index; i++) {
+            currentNode = currentNode.getNext();
+        }
+
+        return currentNode.getValue();
     }
 
     @Override
     public int size() {
-        return 0;
+        return this.count;
     }
 }
