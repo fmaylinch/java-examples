@@ -1,7 +1,9 @@
 package tech.bts.javaexamples.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Example {
 
@@ -10,7 +12,8 @@ public class Example {
         //arrays();
         //lists();
         //myList();
-        myListWithStrings();
+        //myListWithStrings();
+        maps();
     }
 
     private static void arrays() {
@@ -89,6 +92,20 @@ public class Example {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(i + " -> " + list.get(i));
         }
+    }
+
+    private static void maps() {
+
+        Map<String, Integer> ages = new HashMap<>();
+
+        ages.put("John", 30);
+        ages.put("Alex", 20);
+        ages.put("Mary", 15);
+
+        int age = ages.get("Alex");
+        System.out.println("The age of Alex is " + age);
+
+        System.out.println("I have stored " + ages.size() + " values");
     }
 }
 
